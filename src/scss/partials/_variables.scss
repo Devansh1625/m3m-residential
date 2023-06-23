@@ -1,9 +1,8 @@
 // Primary Colors
-$themeColor: #C2AD53;
-$secondaryColor: #091a32;
+$themeColor: #091a32;
+$secondaryColor: #C6B38D;
 
 // Secondary Colors
-$gold: #C6B38D;
 $black: #000000;
 $white: #ffffff;
 $grey: #f1f1f1;
@@ -14,7 +13,6 @@ $error: #ff0000;
 $boxShadow: 0px 3px 6px rgba($black, 0.16);
 
 //  Font Family
-$fontFamily: "Century Gothic";
 $fontFamilyLato: "Lato";
 $fontTitle: "Anglecia Pro Dsp";
 
@@ -25,6 +23,7 @@ $bold: bold;
 // Mixins
 
 $baseSize: 16;
+
 @function size($target, $context: $baseSize) {
   @return calc($target / $context) * 1em;
 }

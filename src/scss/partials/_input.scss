@@ -10,12 +10,12 @@
             padding-bottom: 10px;
             color: $black;
             font-size: size(18);
-            font-family: $fontFamily;
+            font-family: $fontFamilyLato;
             font-weight: $normal;
             &::placeholder{
                 color: $black !important;
                 font-size: size(16);
-                font-family: $fontFamily;
+                font-family: $fontFamilyLato;
                 font-weight: $normal;
             }
         }
@@ -33,7 +33,7 @@
                 top: calc(100% + 8px);
                 left: 0;
                 color: $error;
-                font-family: $fontFamily;
+                font-family: $fontFamilyLato;
                 font-weight: $normal;
                 font-size: size(12);
             }

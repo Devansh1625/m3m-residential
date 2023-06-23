@@ -12,7 +12,7 @@ body {
   -ms-scroll-chaining: none;
   user-select: none;
   // color: $white;
-  // background-color: $black;
+  background-color: $themeColor;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
   -webkit-tap-highlight-color: transparent;
   font-weight: $normal;
   font-size: size(16);
-  font-family: $fontFamily;
+  font-family: $fontFamilyLato;
   touch-action: manipulation;
   line-height: 1.4;
 
@@ -102,20 +102,6 @@ img {
 }
 
 .container {
-  // &--responsive {
-  //   width: 100%;
-  //   max-width: 1200px;
-  //   margin: 0 auto;
-
-  //   @media only screen and (max-width: 1024px) {
-  //     padding: 0 3%;
-  //   }
-
-  //   @media only screen and (max-width: 768px) {
-  //     padding: 0 5%;
-  //   }
-  // }
-
   &--fluid {
     width: 100%;
     padding-left: 6%;
@@ -136,7 +122,7 @@ img {
   text-decoration: none;
   font-weight: $bold;
   font-size: size(18);
-  font-family: $fontFamily;
+  font-family: $fontFamilyLato;
   padding: 15px 20px;
   background-color: $themeColor;
   color: $white;
@@ -146,48 +132,36 @@ img {
   &--normal {
     font-weight: $normal;
   }
-
   &--bold {
     font-weight: $bold;
   }
-
   &--center {
     text-align: center;
   }
-
   &--right {
     text-align: right;
   }
-
   &--left {
     text-align: left;
   }
-
   &--underline {
     text-decoration: underline;
   }
-
   &--capitalize {
     text-transform: capitalize;
   }
-
   &--uppercase {
     text-transform: uppercase;
   }
-
   &--family {
-    font-family: $fontFamily;
-
     &-anglecia {
       font-family: $fontTitle;
     }
-
     &-lato {
       font-family: $fontFamilyLato;
     }
   }
 }
-
 .bg {
   &--primary {
     background-color: $themeColor;
@@ -224,62 +198,12 @@ img {
   }
   
   &--gold {
-    color: $gold;
+    color: $secondaryColor;
   }
 }
 
 .hide {
   display: none;
-}
-
-.width--column-one {
-  width: 100%;
-}
-
-@for $i from 1 through 40 {
-  .width {
-    &--column {
-      &-two {
-
-        // 25px
-        &-#{$i} {
-          width: calc(100% / 2 - #{$i}px);
-        }
-      }
-
-      &-three {
-
-        // 35px
-        &-#{$i} {
-          width: calc(100% / 3 - #{$i}px);
-        }
-      }
-
-      &-four {
-
-        // 30px
-        &-#{$i} {
-          width: calc(100% / 4 - #{$i}px);
-        }
-      }
-
-      &-five {
-
-        // 16px
-        &-#{$i} {
-          width: calc(100% / 5 - #{$i}px);
-        }
-      }
-
-      &-six {
-
-        // 16px
-        &-#{$i} {
-          width: calc(100% / 6 - #{$i}px);
-        }
-      }
-    }
-  }
 }
 
 @for $i from 1 through 100 {

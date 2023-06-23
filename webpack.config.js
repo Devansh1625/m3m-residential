@@ -180,8 +180,8 @@ module.exports = {
         "./assets/css/" + (devMode ? "[name].css" : "[name].bundle.css"),
     }),
     new HtmlWebpackPlugin({
-      filename: "residential.html",
-      template: "src/pug/residential.pug",
+      filename: "index.html",
+      template: "src/pug/index.pug",
       minify: false, // remove to minify html
       inject: "body",
       scriptLoading: "blocking",
