@@ -1,0 +1,47 @@
+// Primary Colors
+$themeColor: #C2AD53;
+$secondaryColor: #091a32;
+
+// Secondary Colors
+$gold: #C6B38D;
+$black: #000000;
+$white: #ffffff;
+$grey: #f1f1f1;
+$disabled: #a2a2a2;
+$error: #ff0000;
+
+// Shodows
+$boxShadow: 0px 3px 6px rgba($black, 0.16);
+
+//  Font Family
+$fontFamily: "Century Gothic";
+$fontFamilyLato: "Lato";
+$fontTitle: "Anglecia Pro Dsp";
+
+// Font Weights
+$normal: normal;
+$bold: bold;
+
+// Mixins
+
+$baseSize: 16;
+@function size($target, $context: $baseSize) {
+  @return calc($target / $context) * 1em;
+}
+
+@mixin max($max) {
+  @media only screen and (max-width: #{$max}px) {
+    @content;
+  }
+}
+@mixin min($min) {
+  @media only screen and (min-width: #{$min}px) {
+    @content;
+  }
+}
+
+@mixin maxOrientation($max, $orientation) {
+  @media only screen and (max-device-width: #{$max}px) and (orientation: #{$orientation}) {
+    @content;
+  }
+}

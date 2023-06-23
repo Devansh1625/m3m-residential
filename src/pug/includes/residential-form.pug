@@ -1,0 +1,18 @@
+mixin contactForm(formData)
+    .form.pd--40.bg--white.bg--shadow#contact
+        form(id=(formData.id) autoComplete="off")
+            h2.fs--22.font--bold.font--family-lato #{formData.title}
+            .form--field-group.mt--30
+                each data in formData.inputArray
+                    if data.type !== 'hidden'
+                        .form--row.mb--40.position--relative
+                            input(id=(data.inputID) type=(data.type) placeholder=(data.placeHolder) maxlength=(data.type == 'tel' ? 10 : undefined) minlength=(data.type == 'tel' ? 10 : undefined))
+                            span(id=(`${data.inputID}_error`)).position--absolute.error
+                    else
+                        input(id=(data.inputID) type=(data.type) placeholder=(data.placeHolder) value="cullinan_teaser")
+                .form--row.mb--40.position--relative
+                    include ./checkbox.pug
+                    +checkBox(formData.checkBox)
+                    span(id=(`checkTnc_error`)).position--absolute.error
+                button(type="submit").block.btn.mb--20.bg--secondary #{formData.btnName}
+                span(id="formStatus").color--error.fs--20.font--family-lato.font--normal.hide.mt--20 Unable to submit form.

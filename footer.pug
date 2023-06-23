@@ -1,0 +1,18 @@
+- const footerPlaceHolder = htmlWebpackPlugin.options.fph
+
+footer.container--fluid
+  .footer--group.pt--50.pb--50.flex.flex--justify-content-between
+    span.fs--16.font--family.font--normal © 2023 M3M,  All rights reserved.
+    button.fs--16.font--family.font--normal(data-modal-open="tnc") Terms and Conditions
+
+.landscape_mobile
+  .landscape_view
+    div
+      .rotating_image        
+            //- img(src=require('src/images/rotate.svg') alt="hamburger-logo")  
+      .landscape_text
+        h3 Please rotate your device
+        p
+          | We do not support landscape mode, 
+          br
+          | please use the website in the portrait mode for best experience.

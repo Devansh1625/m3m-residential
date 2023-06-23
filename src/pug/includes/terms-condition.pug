@@ -1,0 +1,10 @@
+- const tnc = require('src/js/json/'+htmlWebpackPlugin.options.tnc+'.json')
+- const tncData = tnc.tnc
+
+.modal.pop-up(data-modal-id="tnc")
+    .modal--content
+        button.modal--close
+            i(class="m3m-close").color--white
+        .modal--body.bg--white.pd--50.font--left
+            h2.fs--30.font--family-anglecia.color--primary.mb--20 #{tncData.heading}
+            != tncData.paragraph

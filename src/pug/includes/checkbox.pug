@@ -1,0 +1,5 @@
+mixin checkBox(data)
+    span.position--relative.form--checkbox
+        input(id=(data.checkBoxID))(type='checkbox')
+        label.flex.flex--align-items-center.fs--16.font--family.font--normal(for=(data.checkBoxID))
+            != data.checkBoxLabel

@@ -1,0 +1,13 @@
+extends layout
+
+block head
+    title M3M
+
+block content
+    section.container--fluid.flex.flex--align-items-center.flex--direction-column.flex--justify-content-center#thankYouContainer
+        img(src=('./assets/images/thank-you.gif'), alt="Thank You Sir/Madam!")
+        h1.fs--30.font--family-anglecia.color--primary.mb--20.mt--40 Thank you for your valuable time.  
+        p.fs--20.font--family.mb--10 Our team will contact you shortly.
+        a(href="/").btn Back
+
+    include ./includes/terms-condition.pug        

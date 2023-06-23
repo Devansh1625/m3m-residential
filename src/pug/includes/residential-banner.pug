@@ -1,0 +1,13 @@
+- const BanData = require('src/js/json/'+htmlWebpackPlugin.options.ban+'.json')
+- const headingData = BanData.heading
+- const BannerForm = BanData.form
+- const BannerList = BanData.list
+
+section.banner--section.container--fluid.bg--secondary
+    .flex.flex--align-items-center.flex--justify-content-between.banner--section-wrap
+        .banner--container
+            span.fs--22.font--family-anglecia.font--normal.color--white #{headingData.smallTitle}
+            h1.title.fs--35.font--family-anglecia.font--normal.color--white.mt--25.mb--20 #{headingData.title}
+            span.fs--22.font--family-anglecia.font--normal.color--white #{headingData.description}
+        include ./residential-form.pug
+        +contactForm(BannerForm)

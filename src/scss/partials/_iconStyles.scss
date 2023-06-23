@@ -1,0 +1,54 @@
+@import "./iconVariable";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?kwqyki');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?kwqyki#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?kwqyki') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?kwqyki') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?kwqyki##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="m3m-"],
+[class*=" m3m-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.m3m-close {
+  &:before {
+    content: $m3m-close;     
+    color: #fff;
+  }
+}
+.m3m-magnify {
+  &:before {
+    content: $m3m-magnify;     
+    color: #fff;
+  }
+}
+.m3m-diamond {
+  &:before {
+    content: $m3m-diamond;     
+    color: #fff;
+  }
+}
+.m3m-crown {
+  &:before {
+    content: $m3m-crown;     
+    color: #fff;
+  }
+}

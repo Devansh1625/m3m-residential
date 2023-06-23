@@ -1,0 +1,52 @@
+{
+    "heading": {
+        "smallTitle": "Treasured by the royals. Envy of millions.",
+        "title": "We are still searching for the world's largest and most precious uncut diamond. Join us in our mission to find The Cullinan!",
+        "description": "Discover the story of this extraordinaire and come closer to owning it."
+    },
+    "form": {
+        "id": "contact-form",
+        "title": "Find your perfect abode.",
+        "btnName": "Get A Call",
+        "inputArray": [
+            {
+                "inputID": "contactFullName",
+                "placeHolder": "Full Name*",
+                "type": "text"
+            },
+            {
+                "inputID": "contactEMail",
+                "placeHolder": "Email ID*",
+                "type": "email"
+            },
+            {
+                "inputID": "contactPhone",
+                "placeHolder": "Phone Number*",
+                "type": "tel"
+            },
+            {
+                "inputID": "source",
+                "placeHolder": "",
+                "type": "hidden"
+            }
+        ],
+        "checkBox": {
+            "checkBoxID": "tnc",
+            "checkBoxLabel": "<span class=\"block white--nowrap\">I've read and agree to the <button class=\"font--underline font--bold white--preline ml--5\" data-modal-open=\"tnc\" type=\"button\">Terms & Conditions.</button></span>"
+        }
+    },
+    "list": [
+        {
+            "icoName": "magnify",
+            "text": "Mistaken as an ordinary stone, the glistening gem was later revealed to be a 3106-carat rough diamond."
+        },
+        {
+            "icoName": "diamond",
+            "text": "The diamond found its place in the royal heirloom and was presented to King Edward VII."
+        },
+        {
+            "icoName": "crown",
+            "text": "The Cullinan rose to fame forming nine other principal diamonds which are housed at the British Royal Collection. "
+        }
+    ]
+}

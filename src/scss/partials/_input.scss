@@ -1,0 +1,87 @@
+.form {
+    &--row {
+        input, 
+        textarea {
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid rgba($disabled, 0.5) !important;
+            width: 100%;
+            background-color: transparent;
+            padding-bottom: 10px;
+            color: $black;
+            font-size: size(18);
+            font-family: $fontFamily;
+            font-weight: $normal;
+            &::placeholder{
+                color: $black !important;
+                font-size: size(16);
+                font-family: $fontFamily;
+                font-weight: $normal;
+            }
+        }
+        input:-webkit-autofill {
+            background-color: $white !important;
+            border: none;
+            border-bottom: 1px solid rgba($disabled, 0.5);
+            -webkit-text-fill-color: $black;
+            -webkit-box-shadow: none;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+        span {
+            &.error {
+                position: absolute;
+                top: calc(100% + 8px);
+                left: 0;
+                color: $error;
+                font-family: $fontFamily;
+                font-weight: $normal;
+                font-size: size(12);
+            }
+        }
+    }
+
+    &--checkbox {
+        label {
+            position: relative;
+            cursor: pointer;
+
+            &:before {
+                content: '';
+                background-color: $white;
+                border: 1px solid rgba($black, 0.5);
+                padding: 10px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+        }
+        input {
+            display: none;
+            cursor: pointer;
+
+            &:checked {
+                + {
+                    label {
+                        &:after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 1px;
+                            left: 7px;
+                            width: 6px;
+                            height: 14px;
+                            border: solid $themeColor;
+                            border-width: 0 2px 2px 0;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.form--row>input:disabled:placeholder-shown {
+    color: rgba($disabled, 0.5) !important;
+}
